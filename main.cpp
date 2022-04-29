@@ -47,14 +47,13 @@ int main(){
             functionCoder(inputString);
         }
 
-        fflush(stdin);
-
-        while (game != 'y' OR game != 'n'){
+        while (game != 'y' OR game != 'n') {
             cout << endl << "Do you want to continue? (y/n)" << endl;
             cin >> game;
-            if (game == 'y' OR game == 'n'){break;}
+            if (game == 'y' OR game == 'n') { break; }
             cout << "Bad choice !!" << endl;
         }
+        fflush(stdin);
     }
 }
 
